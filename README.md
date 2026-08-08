@@ -1,4 +1,4 @@
-# Limbo Kitchen
+# Naihe Bridge
 
 It is a TPP cooking simulator with dark comedy elements. You play as a chef who signed a job contract without reading the fine print - and now, even after death, you are still bound to work in the same restaurant. The game focuses on preparing complex dishes based on customers’ visual cues and dialogues, while managing increasingly chaotic work shifts.
 
@@ -11,7 +11,7 @@ It is a TPP cooking simulator with dark comedy elements. You play as a chef who 
 - FMOD
 
 ## Development Process:
-"Limbo Kitchen" is currently in active development, with work on the project ongoing for over 5 months. I've been working on the project from the very beginning as the team leader and the sole programmer. Midway through development, another programmer joined the team, and I transitioned into a Lead Programmer role, combining technical leadership with overall team coordination. I'm responsible for designing and implementing the majority of the game's core gameplay systems, while also focusing on maintainable architecture, code quality, and workflow organisation.
+"Naihe Bridge" is currently in active development, with work on the project ongoing for over 5 months. I've been working on the project from the very beginning as the team leader and the sole programmer. Midway through development, another programmer joined the team, and I transitioned into a Lead Programmer role, combining technical leadership with overall team coordination. I'm responsible for designing and implementing the majority of the game's core gameplay systems, while also focusing on maintainable architecture, code quality, and workflow organisation.
 
 ## My Contributions:
 - Designed and implemented the core gameplay logic of the project.
