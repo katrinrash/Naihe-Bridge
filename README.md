@@ -20,12 +20,13 @@ It is a TPP cooking simulator with dark comedy elements, set in a restaurant bet
 - Designed and implemented the core gameplay architecture around event-driven communication and data-driven configuration using Scriptable Objects, keeping gameplay systems modular, independent, and loosely coupled.
 
 - Developed the customer (NPC) system, including AI behaviour and navigation using Unity NavMesh:
-  - Implemented procedural customer spawning and configuration based on Scriptable Object data.
+  - Implemented a Factory-based spawning system for procedural customer creation and initialization using Scriptable Object configurations.
+  - Structured shared NPC functionality through a base class using Template Method pattern elements, allowing regular NPCs and special guests to implement their specific behaviour.
   - Designed event-driven interactions between customers and other gameplay systems, avoiding direct dependencies and keeping NPC logic independent.
 
 - Developed customer order and preference systems using data-driven configurations and event-based communication, including cooking result validation against customer requests.
 - Designed and implemented a data-driven shift management system, with individual shifts and their stages fully configurable through Scriptable Objects.
-- Implemented a state machine to manage gameplay progression, shift stages, and individual mini-game states and steps.
+- Implemented a State Pattern-based state machine to manage gameplay progression, shift stages, and individual mini-game states and steps.
 
 - Designed a modular mini-game architecture supporting multiple cooking activities, with reusable gameplay logic shared across different mini-games:
   - Implemented an interaction highlighting system using object outlines to indicate interactable objects and guide players through mini-game activities.
