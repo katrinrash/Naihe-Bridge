@@ -60,3 +60,6 @@ It is a TPP cooking simulator with dark comedy elements, set in a restaurant bet
 - Strengthening my understanding of design patterns
 - Team coordination and technical leadership
 - Working with Jira and Scrum-based project organisation
+
+## Try the Early Beta:
+https://dobra-job-studios.itch.io/naihe-bridge - itch.io game page
