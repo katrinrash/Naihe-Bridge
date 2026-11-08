@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+
+    <ui:Label text="NPC ANIMATION DATA" class="header"/>
+
+    <ui:VisualElement class="section section-purple">
+
+        <ui:Label  text="Animation Intensity" class="section-title"/>
+        <ui:Label text="Configure the animation intensity" class="section-description"/>
+
+        <uie:PropertyField binding-path="minHeight"/>
+        <uie:PropertyField binding-path="maxHeight"/>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-blue">
+
+        <ui:Label text="Animation Speed" class="section-title"/>
+        <ui:Label text="Configure the animation duration" class="section-description"/>
+
+        <uie:PropertyField binding-path="minDuration"/>
+        <uie:PropertyField binding-path="maxDuration"/>
+
+    </ui:VisualElement>
+
+</ui:UXML>

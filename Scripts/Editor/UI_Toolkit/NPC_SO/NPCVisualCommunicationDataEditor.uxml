@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+
+    <ui:Label text="VISUAL COMMUNICATION" class="header"/>
+
+    <ui:VisualElement class="section section-purple">
+
+        <ui:Label text="Background" class="section-title"/>
+        <ui:Label text="Configure the background" class="section-description"/>
+
+        <uie:PropertyField binding-path="background"/>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-blue">
+
+        <ui:Label text="Information Images" class="section-title"/>
+        <ui:Label text="Configure the images used to display additional information" class="section-description"/>
+
+        <uie:PropertyField binding-path="infoImages"/>
+
+    </ui:VisualElement>
+
+</ui:UXML>

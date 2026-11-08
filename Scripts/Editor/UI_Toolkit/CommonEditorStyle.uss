@@ -1,0 +1,183 @@
+/* ============================= */
+/* Header                        */
+/* ============================= */
+
+.header
+{
+    font-size: 22px;
+    -unity-font-style: bold;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    -unity-text-align: middle-center;
+}
+
+
+/* ============================= */
+/* Sections                      */
+/* ============================= */
+
+.section
+{
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    border-radius: 8px;
+}
+
+.section-title
+{
+    font-size: 15px;
+    -unity-font-style: bold;
+
+    margin-bottom: 4px;
+}
+
+.section-description
+{
+    font-size: 12px;
+
+    margin-bottom: 14px;
+
+    white-space: normal;
+}
+
+/* ============================= */
+/* Colored Sections               */
+/* ============================= */
+
+.section-purple
+{
+    background-color: rgba(125, 95, 180, 0.08);
+
+    border-left-width: 3px;
+    border-left-color: rgb(145, 100, 230);
+
+    padding-left: 14px;
+}
+
+.section-purple .section-title 
+{
+    color: rgb(190, 155, 255);
+}
+
+.section-purple .section-description
+{
+    color: rgb(165, 145, 205);
+}
+
+.section-blue
+{
+    background-color: rgba(80, 120, 180, 0.08);
+
+    border-left-width: 3px;
+    border-left-color: rgb(90, 140, 220);
+
+    padding-left: 14px;
+}
+
+.section-blue .section-title 
+{
+    color: rgb(155, 190, 245);
+}
+
+.section-blue .section-description
+{
+    color: rgb(145, 170, 205);
+}
+
+.section-green
+{
+    background-color: rgba(80, 150, 110, 0.08);
+
+    border-left-width: 3px;
+    border-left-color: rgb(80, 175, 115);
+
+    padding-left: 14px;
+}
+
+.section-green .section-title
+{
+    color: rgb(140, 220, 165);
+}
+
+.section-green .section-description
+{
+    color: rgb(135, 185, 150);
+}
+
+.section-orange
+{
+    background-color: rgba(180, 125, 70, 0.08);
+
+    border-left-width: 3px;
+    border-left-color: rgb(220, 150, 75);
+
+    padding-left: 14px;
+}
+
+.section-orange .section-title
+{
+    color: rgb(245, 190, 125);
+}
+
+.section-orange .section-description
+{
+    color: rgb(205, 165, 125);
+}
+
+.section-red
+{
+    background-color: rgba(180, 75, 75, 0.08);
+
+    border-left-width: 3px;
+    border-left-color: rgb(215, 90, 90);
+
+    padding-left: 14px;
+}
+
+.section-red .section-title
+{
+    color: rgb(245, 150, 150);
+}
+
+.section-red .section-description
+{
+    color: rgb(205, 145, 145);
+}
+
+/* ============================= */
+/* Cards                         */
+/* ============================= */
+
+.card
+{
+    padding: 12px;
+    margin-bottom: 12px;
+
+    border-width: 1px;
+    border-color: rgba(145, 145, 145, 0.25);
+    border-radius: 6px;
+
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+.card-title
+{
+    font-size: 14px;
+    -unity-font-style: bold;
+
+    margin-bottom: 3px;
+}
+
+.card-description
+{
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+    white-space: normal;
+}

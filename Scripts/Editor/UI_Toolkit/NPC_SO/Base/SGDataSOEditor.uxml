@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+
+    <ui:Label text="SPECIAL GUEST DATA" class="header"/>
+
+    <ui:VisualElement class="section section-blue">
+
+        <ui:Label text="Base Settings" class="section-title"/>
+        <ui:Label text="Basic components and configuration of the special guest" class="section-description"/>
+
+        <uie:PropertyField binding-path="npcPrefab"/>
+        <uie:PropertyField binding-path="preferences"/>
+        <uie:PropertyField binding-path="icon"/>
+        <uie:PropertyField binding-path="dish"/>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-purple">
+
+        <ui:Label text="Dialogue Settings" class="section-title"/>
+        <ui:Label text="Configure dialogues for different guest interactions and outcomes" class="section-description"/>
+
+        <ui:VisualElement class="card">
+
+            <ui:Label text="General Dialogues" class="card-title"/>
+            <ui:Label text="Dialogues used during placing an order" class="card-description"/>
+
+            <uie:PropertyField binding-path="sgDialogues" label="Guest Dialogues"/>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement class="card">
+
+            <ui:Label text="Result Dialogues" class="card-title"/>
+            <ui:Label text="Dialogues assigned to specific outcomes" class="card-description"/>
+
+            <uie:PropertyField binding-path="resultDialogues" label="Outcome Dialogues"/>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-red">
+
+        <ui:Label text="Default Movement Settings" class="section-title"/>
+
+        <ui:Label text="Basic movement parameters used by the special guest" class="section-description"/>
+
+        <uie:PropertyField binding-path="maxMovementSpeed"/>
+        <uie:PropertyField binding-path="minMovementSpeed"/>
+        <uie:PropertyField binding-path="stopOffset"/>
+        <uie:PropertyField binding-path="rotationSpeed"/>
+
+    </ui:VisualElement>
+
+</ui:UXML>

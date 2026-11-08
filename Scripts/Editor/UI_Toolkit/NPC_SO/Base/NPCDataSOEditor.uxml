@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+
+    <ui:Label text="REGULAR NPC DATA" class="header"/>
+
+    <ui:VisualElement class="section section-blue">
+
+        <ui:Label text="Base Settings" class="section-title"/>
+        <ui:Label text="Basic components and configuration of the NPC" class="section-description"/>
+
+        <uie:PropertyField binding-path="npcPrefab"/>
+        <uie:PropertyField binding-path="spicesType"/>
+        <uie:PropertyField binding-path="feedingType"/>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-red">
+
+        <ui:Label text="Default Movement Settings" class="section-title"/>
+        <ui:Label text="Basic movement parameters used by the NPC" class="section-description"/>
+
+        <uie:PropertyField binding-path="maxMovementSpeed"/>
+        <uie:PropertyField binding-path="minMovementSpeed"/>
+        <uie:PropertyField binding-path="stopOffset"/>
+        <uie:PropertyField binding-path="rotationSpeed"/>
+
+    </ui:VisualElement>
+</ui:UXML>

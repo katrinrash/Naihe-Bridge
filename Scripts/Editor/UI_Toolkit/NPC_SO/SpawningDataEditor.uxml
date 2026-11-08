@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+
+    <ui:Label text="SPAWNING DATA" class="header"/>
+
+    <ui:VisualElement class="section section-orange">
+
+        <ui:Label text="NPC Options" class="section-title"/>
+        <ui:Label text="Configure the available options for regular NPC spawning" class="section-description"/>
+
+        <uie:PropertyField binding-path="npcOptions"/>
+
+    </ui:VisualElement>
+
+    <ui:VisualElement class="section section-blue">
+
+        <ui:Label text="Spawning Prefabs" class="section-title"/>
+        <ui:Label text="Assign the prefabs used for regular NPCs and special guests" class="section-description"/>
+
+        <uie:PropertyField binding-path="npcPrefab"/>
+        <uie:PropertyField binding-path="specialGuestPrefab"/>
+
+    </ui:VisualElement>
+
+</ui:UXML>
