@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 
 [Serializable]
-public class BaseValidator
+public abstract class BaseValidator
 {
     [SerializeField] private List<ValidationDataSO> requirements;
 

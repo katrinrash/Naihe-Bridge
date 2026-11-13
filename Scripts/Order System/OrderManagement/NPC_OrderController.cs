@@ -1,4 +1,3 @@
-using System;
 
 /// <summary>
 /// Manages customer order generation and communicates selected dishes to other gameplay systems.
@@ -6,9 +5,6 @@ using System;
 
 public class NPC_OrderController
 {
-    public static event Action<DishesEnum> OnDishChosen;
-    public static event Action<bool> ResetAfterOrderIsReady;
-
     private readonly int _maxIndex;
     private int _dishIndex;
     private int _extraDishIndex;
@@ -37,7 +33,7 @@ public class NPC_OrderController
         else
             _dishIndex = RandomUtility.GetRandomInt(0, _maxIndex);
 
-        OnDishChosen?.Invoke((DishesEnum)_dishIndex); 
+        OrderEventBus.ManageDishChosen((DishesEnum)_dishIndex);
 
         return (_dishIndex, count);
     }
@@ -50,8 +46,8 @@ public class NPC_OrderController
         _extraDishIndex = RandomUtility.GetRandomUniqueInt(0, _maxIndex);
         RandomUtility.CleanCache();
 
-        OnDishChosen?.Invoke((DishesEnum)_dishIndex);
-        OnDishChosen?.Invoke((DishesEnum)_extraDishIndex);
+        OrderEventBus.ManageDishChosen((DishesEnum)_dishIndex);
+        OrderEventBus.ManageDishChosen((DishesEnum)_extraDishIndex);
 
         return (_dishIndex, count);
     }
@@ -62,6 +58,6 @@ public class NPC_OrderController
 
     public void ResetAfterReady()
     {
-        ResetAfterOrderIsReady?.Invoke(false);
+        OrderEventBus.ManageResetAfterOrderIsReady(false);
     }
 }
